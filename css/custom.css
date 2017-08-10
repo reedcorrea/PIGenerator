@@ -25,9 +25,7 @@ body {
 }
 
 .cell{
-    width: 10%;
-    float: left; /*so that the boxes wrap around after 3*/
-    font-size:40;
+    font-size:100;
     color: white; /*font color*/
     text-align:center;
     Height: 70px;
