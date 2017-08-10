@@ -46,7 +46,7 @@ $(document).ready(function() {
   document.title = name;
 
   $("body").css("font-family", font);
-  startup.styleLogo("#logo");
+  /* startup.styleLogo("#logo"); */
   $(".quote-row").css("background-color", accent.darken(50).rgba());
   $(".text-muted").css("background-color", accent.darken(-20).rgba());
 

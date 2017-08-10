@@ -493,13 +493,13 @@ function worldsFirst (seed) {
     }
 }
 
-function idea (seed) {
-    return "Build: " + idea(seed) + "Using: " + language(seed);
+function combinedStatement (seed) {
+    return "Build: " + idea(seed) + " " + "Using: " + language(seed);
 }
 
 function makeOpener (seed) {
     var results = [];
-    results.push(idea(seed));
+    results.push(combinedStatement(seed));
     /* results.push(isRevo(seed));
     results.push(isLocal(seed));
     results.push(shareAnd(seed));
