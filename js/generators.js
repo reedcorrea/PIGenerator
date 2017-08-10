@@ -24,6 +24,14 @@ function someChoices(seed, choices, n) {
     return results;
 }
 
+function idea(seed){
+    return seedChoice(seed, ideas);
+}
+
+function language(seed) {
+    return seedChoice(seed, languages);
+}
+
 function verb (seed) {
     return seedChoice(seed, verbs);
 }
@@ -485,9 +493,14 @@ function worldsFirst (seed) {
     }
 }
 
+function idea (seed) {
+    return "Build: " + idea(seed) + "Using: " + language(seed);
+}
+
 function makeOpener (seed) {
     var results = [];
-    results.push(isRevo(seed));
+    results.push(idea(seed));
+    /* results.push(isRevo(seed));
     results.push(isLocal(seed));
     results.push(shareAnd(seed));
     results.push(theMax(seed));
@@ -497,7 +510,7 @@ function makeOpener (seed) {
     results.push(weUse(seed));
     results.push(gotBetter(seed));
     results.push(manageYour(seed));
-    results.push(worldsFirst(seed));
+    results.push(worldsFirst(seed)); */
     return seedChoice(seed + 999, results);
 }
 
