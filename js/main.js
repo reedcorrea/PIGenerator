@@ -161,8 +161,8 @@ $(document).ready(function() {
   $("#navigation").css("background", accent.rgba());
   $("footer").css("background", "#333");
   $("footer a").css("color", accent.rgba());
-  $("#cover-heading").html(slogan);
-  $("#opener").html(openerText);
+  $("#cover-heading").html(getLogo(seed));
+  $("#opener").html(openerText);s
   $("#subHeading1").html(capitalizeFirst(subHeadings[0]));
   $("#subHeading2").html(capitalizeFirst(subHeadings[1]));
   $("#subHeading3").html(capitalizeFirst(subHeadings[2]));

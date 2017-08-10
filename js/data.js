@@ -10,7 +10,7 @@ var diagonals = ["1.png", "2.png", "3.png", "4.png", "5.png"];
 var ideas = ["An app to drain your battery faster.",
 "An app that helps you spend more money by taking a variable amount out of your bank account every few days.",
 "A browser extension that tweets your browsing history.",
-"An app that texts your mom copies of your Snapchats.",
+"An app that texts your mom screenshots of your Snapchats.",
 "An app that fills up all the empty space on your device.",
 "A Chrome extension that blocks all web content that is not an advertisement.",
 "An app that turns off your phone."];

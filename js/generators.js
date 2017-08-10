@@ -32,6 +32,66 @@ function language(seed) {
     return seedChoice(seed, languages);
 }
 
+function getIcon(seed){
+    var lang = language(seed);
+    switch (lang){
+        case "AngularJS":
+            return "devicon-angularjs-plain";
+            break;
+        case "BackboneJS":
+            return "devicon-backbonejs-plain";
+            break;
+        case "C":
+            return "devicon-c-plain";
+            break;
+        case "C++":
+            return "devicon-cplusplus-plain";
+            break;
+        case "C#":
+            return "devicon-csharp-plain";
+            break;
+        case "CoffeeScript":
+            return "devicon-coffeescript-plain";
+            break;
+        case "Go":
+            return "devicon-go-plain";
+            break;
+        case "HTML":
+            return "devicon-html5-plain";
+            break;
+        case "Java":
+            return "devicon-java-plain";
+            break;
+        case "JavaScript":
+            return "devicon-javascript-plain";
+            break;
+        case "KrakenJS":
+            return "devicon-krakenjs-plain";
+            break;
+        case "NodeJS":
+            return "devicon-nodejs-plain";
+            break;
+        case "PHP":
+            return "devicon-php-plain";
+            break;
+        case "Python":
+            return "devicon-python-plain";
+            break;
+        case "Ruby":
+            return "devicon-ruby-plain";
+            break;
+        case "Swift":
+            return "devicon-swift-plain";
+            break;
+        case "Typescript":
+            return "devicon-typescript-plain";
+            break;
+        default:
+            return "";
+            break;
+    }
+}
+
 function verb (seed) {
     return seedChoice(seed, verbs);
 }
@@ -142,17 +202,9 @@ function getColor (seed) {
 }
 
 function getLogo (seed) {
-    var logo; 
-    if (random(seed) < 0.5) {
-        // Use Font Awesome
-        logo = seedChoice(seed, fontAwesome);
-        logo = '<i class="fa ' + logo + '"></i>';
-    } else {
-        // Use Glyphicons
-        logo = seedChoice(seed, glyphicons);
-        logo = '<span class="glyphicon ' + logo + '"></span>';
-    }
-    return logo;
+    var logo = getIcon(seed); 
+    logoTag = '<i class=' + logo + '></i>';
+    return logoTag;
 }
 
 /**
