@@ -13,7 +13,13 @@ var ideas = ["An app to drain your battery faster.",
 "An app that texts your mom copies of your Snapchats.",
 "An app that fills up all the empty space on your device.",
 "A Chrome extension that blocks all web content that is not an advertisement.",
-""];
+"An app that turns off your phone."];
+
+var languages = ["AngularJS", "BackboneJS", "C", "C++", "C#", "CoffeeScript", "Go", "HTML",
+"Java", "JavaScript", "KrakenJS", "NodeJS", "PHP", "Python", "Ruby", "Swift", "Typescript"];
+
+var platform = ["Android", "Chrome", "Facebook","iOS", "MacOS", "Twitter", "Windows XP", "Windows Vista",
+"Windows 7", "Windows 8", "Windows 8.1", "Windows 10"];
 
 var backgrounds = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", 
 										"6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg",
